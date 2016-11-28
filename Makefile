@@ -1,4 +1,4 @@
-COMPRESS=shrinksafe
+COMPRESS=./node_modules/uglify-js/bin/uglifyjs
 NAME=vcardjs-`cat VERSION`
 
 .PHONY: build

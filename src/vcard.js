@@ -103,16 +103,13 @@ var VCard;
 	      // If the given attribute's key has cardinality > 1, instead of overwriting
 	      // the current value, an additional value is appended.
         addAttribute: function(key, value) {
-            console.log('add attribute', key, value);
             if(! value) {
                 return;
             }
             if(VCard.multivaluedKeys[key]) {
                 if(this[key]) {
-                    console.log('multivalued push');
                     this[key].push(value)
                 } else {
-                    console.log('multivalued set');
                     this.setAttribute(key, [value]);
                 }
             } else {

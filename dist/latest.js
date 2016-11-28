@@ -1,1 +1,1 @@
-vcardjs-0.3.min.js
+vcardjs-0.3.1.min.js
